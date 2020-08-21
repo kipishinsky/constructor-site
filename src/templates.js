@@ -1,19 +1,3 @@
-import {model} from './model'
-import './styles/main.css'
-
-model.forEach( block => {
-	let html
-	if (block.type === 'title') {
-		html = title(block)
-	} else if (block.type === 'text') {
-		html = text(block)
-
-	} else if (block.type === 'textColumns') {
-		html = textColumns(block)
-	}
-	document.querySelector('#site').insertAdjacentHTML('beforeend', html)
-})
-
 function title(block) {
 	return `
 		<div class="row">
@@ -43,4 +27,10 @@ function textColumns(block) {
             ${html1.join('')}
         </div>
 	`
+}
+
+export const templates = {
+	title,
+	text,
+	textColumns
 }
