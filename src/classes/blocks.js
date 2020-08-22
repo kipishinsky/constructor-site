@@ -60,16 +60,3 @@ export class TextColumnsBlock extends Block {
 }
 
 
-export class BorodaBlock extends Block {
-	constructor(value, options) {
-		super(value, options)
-	}
-
-	toHTML() {
-		const {alt, styles, imageStyles} = this.options
-		const html = `<img src="${this.value}" alt="${alt}" style="${imageStyles}" />`
-		return row(html, styles)
-	}
-
-}
-

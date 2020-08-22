@@ -32,12 +32,6 @@ export const model = [
 	}),
 	new TextBlock(text, {
 		styles: 'background: linear-gradient(to left, #f2994a, #f2c94c);font-weight: bold;padding: 1rem; text-align: center;'
-	}),
-
-	new BorodaBlock(image, {
-		styles: 'padding: 2rem 0; display: flex; justify-content: center;',
-		alt: 'my image',
-		imageStyles: 'width: 300px; height: auto;'
 	})
 
 ]
